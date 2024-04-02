@@ -1,6 +1,5 @@
 <template>
-    <textarea
-        :value="modelValue"
+    <textarea :value="modelValue"
         @input="$emit('update:modelValue', $event.target.value)"/>
 </template>
 
@@ -10,7 +9,7 @@ export default {
 
     props: {
         modelValue: {
-            type: String,
+            type: [String, null],
             required: true,
         },
     },
