@@ -1,6 +1,8 @@
 <template>
-    <textarea :value="modelValue"
-        @input="$emit('update:modelValue', $event.target.value)"/>
+    <textarea class="autosize-textarea"
+        :value="modelValue"
+        rows="1"
+        @input="$emit('update:modelValue', $event.target.value); resize()"/>
 </template>
 
 <script>
@@ -17,23 +19,23 @@ export default {
     emits: ['update:modelValue'],
 
     mounted() {
-        this.resize();
-        this.$el.style['overflow-y'] = 'hidden';
-
-        this.$el.addEventListener('input', this.resize);
-    },
-
-    beforeUnmount() {
-        this.$el.removeEventListener('input', this.resize);
+        this.$nextTick(this.resize);
     },
 
     methods: {
-        resize(event = null) {
-            const el = event ? event.target : this.$el;
+        resize() {
+            this.$el.style.height = '1px';
 
-            el.style.height = 'auto';
-            el.style.height = `${el.scrollHeight}px`;
+            if (this.$el.scrollHeight > 0) {
+                this.$el.style.height = `${this.$el.scrollHeight}px`;
+            }
         },
     },
 };
 </script>
+
+<style>
+.autosize-textarea {
+    overflow-y: hidden;
+}
+</style>
