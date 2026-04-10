@@ -1,17 +1,15 @@
 # Textarea
 
-[![License](https://poser.pugx.org/enso-ui/textarea/license)](https://packagist.org/packages/enso-ui/textarea)
-[![Latest Stable Version](https://poser.pugx.org/enso-ui/textarea/version)](https://packagist.org/packages/enso-ui/textarea)
-
-Element Resize Detector
+Autosizing textarea component.
 
 ### Features
 
-- soon
+- automatic height adjustment based on content
+- simple `v-model` integration
 
 ### Configuration & Usage
 
-- soon
+Use the component with `v-model` to keep the textarea height in sync with its content.
 
 ### Contributions
 
