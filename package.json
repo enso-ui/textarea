@@ -1,28 +1,28 @@
 {
-  "name": "@enso-ui/textarea",
-  "version": "2.1.1",
-  "description": "Simple autosize textarea made with Vue",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/enso-ui/textarea.git"
-  },
-  "keywords": [
-    "textarea",
-    "renderless",
-    "autosize",
-    "vue"
-  ],
-  "author": "Adrian Ocneanu <aocneanu@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/enso-ui/textarea/issues"
-  },
-  "homepage": "https://github.com/enso-ui/textarea#readme",
-  "peerDependencies": {
-    "vue": "^3.5.0"
-  },
-  "devDependencies": {
-    "vue": "^3.5.0"
-  }
+    "name": "@enso-ui/textarea",
+    "version": "2.1.1",
+    "description": "Autosizing textarea component for Enso UI.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/enso-ui/textarea.git"
+    },
+    "keywords": [
+        "textarea",
+        "renderless",
+        "autosize",
+        "vue"
+    ],
+    "author": "Adrian Ocneanu <aocneanu@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/enso-ui/textarea/issues"
+    },
+    "homepage": "https://github.com/enso-ui/textarea#readme",
+    "peerDependencies": {
+        "vue": "^3.5.0"
+    },
+    "devDependencies": {
+        "vue": "^3.5.0"
+    }
 }
